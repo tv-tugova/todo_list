@@ -41,7 +41,7 @@ const TodoItem: React.FC<TodoItemProps> = ({
           onChange={onToggle}
         />
         <ListItemText primary={task} />
-        <IconButton onClick={onDelete}>
+        <IconButton aria-label="Delete" onClick={onDelete}>
           <ClearIcon />
         </IconButton>
       </ListItem>
